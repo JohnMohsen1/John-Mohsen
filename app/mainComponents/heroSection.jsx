@@ -1,10 +1,4 @@
-"use client"
 
-import lottie from 'lottie-web';
-import { defineElement } from 'lord-icon-element';
-
-// define "lord-icon" custom element with default properties
-defineElement(lottie.loadAnimation);
 
 const HeroSection = () => {
 
@@ -34,58 +28,6 @@ const HeroSection = () => {
 
         <div className="homeSectionImage">
           <img src="./hero_imgs/herpPic.png" alt="" className="heroPic" />
-        </div>
-
-        <div className="heroHeaderCircleContainer">
-          <span className="heroHeaderCircle" id="menucircle">
-            <img src="./hero_imgs/menuWhite.png" alt="" />
-          </span>
-
-          <a href="#Home">
-            <span className="heroHeaderCircle" id="homecircle" title="Home">
-              <lord-icon
-                src="https://cdn.lordicon.com/slduhdil.json"
-                trigger="morph"
-                colors="primary:#ffffff"
-                state="morph-2"
-              ></lord-icon>
-            </span>
-          </a>
-
-          <a href="#About">
-            <span className="heroHeaderCircle" id="aboutcircle" title="About Me">
-              <lord-icon
-                src="https://cdn.lordicon.com/ncxoarcp.json"
-                trigger="hover"
-                colors="primary:#ffffff"
-              ></lord-icon>
-            </span>
-          </a>
-
-          <a href="#Skills">
-            <span className="heroHeaderCircle" id="workcircle" title="Skills">
-              <lord-icon
-                src="https://cdn.lordicon.com/tdbbbqzo.json"
-                trigger="hover"
-                colors="primary:#ffffff,secondary:#ffffff,tertiary:#ffffff"
-              ></lord-icon>
-            </span>
-          </a>
-
-          <a href="#Projects">
-            <span className="heroHeaderCircle" id="contactcircle" title="Designs">
-              <lord-icon
-                src="https://cdn.lordicon.com/oezixobx.json"
-                trigger="hover"
-                colors="primary:#ffffff"
-                state="hover"
-              ></lord-icon>
-            </span>
-          </a>
-
-          <span className="heroHeaderCircle" id="closecircle">
-            <img src="./hero_imgs/close.png" alt="" />
-          </span>
         </div>
       </section>
     </div>
