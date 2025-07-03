@@ -421,25 +421,22 @@ export default function DomJs() {
     const menuClose = document.querySelector('.close');
     const menuBoxText = document.querySelectorAll('.menuBoxText a h1');
 
-    menu?.addEventListener('click', (e)=>{
-      e.preventDefault
-      if ( menuBox instanceof HTMLDivElement )  {
+   menu?.addEventListener('click', ()=>{
+      if ( menuBox instanceof HTMLDivElement ){
          menuBox.style.display = 'block'; 
         }
     })
 
     menuBoxText?.forEach (element =>{
       element.addEventListener ("click", ()=>{
-        if (menuBox instanceof HTMLDivElement) 
-          {
+        if (menuBox instanceof HTMLDivElement){
              menuBox.style.display = "none"
         }
       })
     })
 
-    menuClose?.addEventListener('click', (x)=> {
-      x.preventDefault
-      if (menuBox instanceof HTMLDivElement) {
+    menuClose?.addEventListener('click', ()=> {
+      if (menuBox instanceof HTMLDivElement){
         menuBox.style.display = 'none' 
       }
     })
