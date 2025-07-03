@@ -1,0 +1,1292 @@
+@import "tailwindcss";
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 12px ;
+    height: 12px ;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(113, 113, 113);
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(228, 228, 228);
+    cursor: pointer; 
+}
+
+::-webkit-scrollbar-track {
+    background-color: #191919;
+}
+
+body{
+    background-color: #222222;
+    min-height: 100vh;
+    background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+    background-image: url('/hero_imgs/stars-min.jpg');
+    background-blend-mode: color-dodge;
+    background-repeat: repeat;
+    background-size: 100%;
+    margin: 0em;
+}
+
+.main{
+    padding: 1em;
+}
+
+header{
+    display: flex;
+    justify-content: center !important;
+    gap: 12.5vw;
+    width: 85%;
+    background-color: #191919;
+    margin: 1em auto 0 auto;
+    padding: 1em 0em;
+    place-self: center;
+    place-items: center;
+    border-radius: 3em;
+    position: relative;
+}
+  
+.logo{
+    width: 7vw;
+}
+  
+header nav ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    font-family: 'poppins';
+    list-style-type: none;
+    padding: 0em;
+    margin: auto;
+}
+  
+header nav ul a {
+    max-width: fit-content;
+    text-decoration: none;
+    font-size: calc(1vw + 0.001vh); 
+    color: white;
+}
+  
+li{
+    width: fit-content;
+    padding: 0 2em;
+}
+  
+.default{
+    color: rgb(253, 173, 0);
+}
+  
+header a:hover{
+    color: rgb(253, 173, 0);
+}
+  
+.contact{ 
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+  
+.contact img {
+    width: 1.5vw;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+    font-family: 'poppins';
+    font-size: calc(1vw + 0.001vh); 
+}
+  
+.menu{
+    display: none;
+} 
+  
+.menuBox{
+    display: none;
+}
+
+/* main sectio */
+
+.mainSection{
+    width: 100%;
+}
+
+.homeSection{
+    display: flex;
+    padding: 0em 8em;
+    justify-content: center;
+}
+
+.homeSectionImage{
+    padding-top: 6em;
+    text-align: center;
+    width: 30%;
+}
+
+.heroPic{
+    width: 100%;
+}
+
+
+.homeSectionText{
+    margin-top: 2em;
+    margin-left: 1.5em;
+    width: 70%;
+    padding-top: 3em;
+    color: white;
+    font-family: 'poppins';
+}
+
+.homeSectionText h1{
+    margin: 0;
+    font-size: calc(1vw + 5vh); 
+    font-weight: 600;
+}
+
+.homeSectionText h2{
+    margin: 0;
+    font-size: calc(1vw + 3vh);
+}
+
+.homeSectionText p{
+    color: rgb(209, 209, 209);
+    margin-top: 2em;
+    font-size: calc(1vw + 0.35vh); 
+    width: 90%;
+    line-height: 1.9em;
+    text-align: justify;
+}
+
+.homeSectionText button{
+    padding: 1em;
+    color: white;
+    background-color: rgb(223, 6, 24);
+    border: transparent;
+    padding: 1em 1.5em;
+    font-size: calc(1vw + 0.1vh);
+    font-weight: 600;
+    margin-top: 2em;
+    border-radius: 0.8em;
+    cursor: pointer;
+}
+
+.homeSectionText button div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 18vw;
+}
+
+.homeSectionText button a {
+  font-size: calc(0.5vw + 1vh);
+}
+
+.homeSectionText button img {
+  width: 10%;
+  color: white;
+  margin-right: 0.5em;
+}
+
+.homeSectionText button:hover{
+    background-color: rgb(175, 6, 20);
+    animation: resumeAnimation 1000ms;
+}
+
+@keyframes resumeAnimation {
+    from{
+        transform: translateY(0);
+    }
+
+    to{
+        transform: translateY(-0.5em); 
+    }
+}
+
+
+/* menu circle when scrolling container */
+
+.heroHeaderCircle{
+    display: block;
+    position: fixed;
+    right: 4.6vw;
+    background-color: rgb(253, 143, 0);
+    padding: 2em 0em;
+    border-radius: 50%;
+    width: 4.3em;
+    height: 0.5em;
+    top: 83vh;
+    cursor: pointer;
+    animation: menuCircleOpenMov 0.5s ease-in-out ;
+    animation: menuCircleCloseMov 0.5s ease-in-out ;
+    z-index: 6;
+}
+
+@keyframes menuCircleOpenMov {
+    from {
+        transform: translateY(9em);
+    }
+}
+
+@keyframes menuCircleCloseMov {
+    from{
+        transform: translateY(0em);
+    }
+    to {
+        transform: translateY(9em);
+    }
+}
+
+#homecircle{
+    width: 3.9em;
+    height: 0.1vh; 
+    right: 4.9vw;
+    transform: translateY(-20em);
+    animation: homeCircleMov 0.5s ease-in-out
+}
+
+@keyframes homeCircleMov {
+    from{
+        transform: translateY(0em);
+    }
+    to {
+        transform: translateY(-20em);
+    }
+}
+
+#homecircle lord-icon {
+    width:2.3em;
+    height:2.3em;
+    margin-top: -1.1em;
+    margin-left: 0.85em;
+}
+
+/*
+#homecircle img{
+    width: 38%;
+    margin-top: -4.2em;
+    margin-left: 1.3em;
+}*/
+
+#aboutcircle{
+    width: 3.9em; 
+    height: 0.1vh; 
+    right: 4.9vw;
+    transform: translateY(-15em);
+    animation: aboutCircleMove 0.4s ease-in-out;
+}
+
+@keyframes aboutCircleMove{
+    from{
+        transform: translateY(0em);
+    }
+    to {
+        transform: translateY(-15em);
+    }
+}
+
+#aboutcircle lord-icon {
+    width: 2.5em;
+    height: 2.5em;
+    margin-top: -1.2em;
+    margin-left: 0.7em;
+}
+
+/*#aboutcircle img{
+    width: 48%;
+    margin-top: -4.2em;
+    margin-left: 1.1em;
+}*/
+
+#workcircle {
+    width: 3.9em; 
+    height: 0.1vh; 
+    right: 4.9vw;
+    transform: translateY(-10em);
+    animation: workCircleMov 0.3s ease-in-out
+}
+
+@keyframes workCircleMov {
+    from{
+        transform: translateY(0em);
+    }
+    to {
+        transform: translateY(-10em);
+    }
+}
+
+#workcircle lord-icon{
+    width: 2.5em;
+    height: 2.5em;
+    margin-top: -1.3em;
+    margin-left: 0.7em;
+}
+
+/* #workcircle img {
+    width: 42%;
+    margin-top: -4.2em;
+    margin-left: 1.3em;
+}*/
+
+#contactcircle {
+    width: 3.9em; 
+    height: 0.1vh; 
+    right: 4.9vw;
+    transform: translateY(-5em);
+    animation: contactCircleMov 0.2s ease-in-out
+}
+
+@keyframes contactCircleMov {
+    from{
+        transform: translateY(0em);
+    }
+    to {
+        transform: translateY(-5em);
+    }
+}
+
+#contactcircle lord-icon {
+    width: 2.5em;
+    height: 2.5em;
+    margin-top: -1.1em;
+    margin-left: 0.71em;
+}
+
+/*#contactcircle img{
+    width: 45%;
+    margin-top: -2.5em;
+    margin-left: 1.1em;
+}*/
+
+.heroHeaderCircle img {
+    margin-left: 1.5em;
+    margin-top: -0.5em;
+    width: 35%;
+}
+
+/* about section*/
+
+.aboutSection{
+    margin-bottom: 10em;
+    display: flex;
+    align-items: center;
+    padding: 0em 4.5em;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+.aboutSectionImage {
+    margin-left: -7em;
+    max-width: 50%;
+}
+
+.aboutSectionText{
+    width: 60%;
+    color: white;
+    font-family: 'poppins';
+    justify-content: center;
+    text-align: center;
+    padding-top: 8em;
+    margin-top: 5em;
+}
+
+.aboutTitle{
+    font-size: calc(1vw + 3.5vh);
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.aboutSectionText p{
+    font-size: calc(1vw + 0.3vh);
+    padding: 0 3em;
+    line-height: 2.3em;
+    text-align: justify;
+}
+
+.analysis{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5em;
+    padding: 3em 0;
+}
+
+.analysis h1{
+    font-size: calc(1vw + 3vh);
+    font-weight: 800;
+    color: rgb(253, 173, 0) ;
+}
+
+.designer{
+    margin-left: -16vw;
+    margin-top: 5vh;
+    display: block;
+    width: 80vw;
+    height: 80vh;
+    clip-path: polygon(2px -1px, 100% 0px, 96.38% 81.75%, 1px 92.95%);
+}
+
+.skillsAndTools {
+    color: white;
+    font-family: 'poppins';
+    text-align: center;
+    padding: 5em 3em;
+    margin-bottom: 12em;
+}
+
+.skillsText h1 {
+    font-size: calc(1vw + 3.5vh);
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.skillsText p {
+    font-size: calc(1vw + 0.8vh);
+    margin-bottom: 0.5em;
+}
+
+.skillsImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 2em;
+}
+
+.skillsImages h3{
+    font-size: calc(1vw + 0.3vh);
+    font-weight: 500;
+}
+
+.skillsImages div {
+    background-color: hsl(0, 0%, 10%);
+    padding: 2em;
+    margin: 2em;
+    border-radius: 1.5em;
+    width: 13%;
+    border: 0.2em solid #191919 ;
+    place-self: center;
+    place-items: center;
+}
+
+.skillsImages div:hover {
+    animation: skillsAnimation 1000ms;
+    border: 0.2em solid rgb(253, 173, 0);
+}
+
+@keyframes skillsAnimation {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-0.5em);
+    }
+}   
+
+.skillsImages div img {
+    width: 50%;
+}
+
+.skillsImages div h3 {
+  margin-top: 1em;
+}
+
+.workProjects{
+    width: 100%;
+}
+
+.workProjectsText {
+    text-align: center;
+    color: white;
+    font-family: 'poppins';
+    margin-bottom: 4em;
+}
+
+.workProjectsText h1 {
+    font-size: calc(1vw + 4vh);
+    font-weight: 600;
+}
+
+.workProjectsText p {
+    margin: 1.5em 0;
+    font-size: calc(1vw + 0.8vh);
+
+}
+
+.workProjectsText p a {
+    color: rgb(253, 173, 0);
+    text-decoration: none;
+    font-size:  calc(1vw + 1.5vh);
+    margin-left: 0.3em;
+}
+
+.mainWorksCintainer{
+    background-color:#202020;
+    justify-content: center;
+    place-self: center;
+    width: 95%;
+    border-radius: 2em;
+
+}
+
+.workProjectsBtns{
+    text-align: center;
+    padding: 1em 0;
+    background-color: #191919;
+}
+
+.workProjectsBtns button {
+    padding: 1em;
+    background-color: transparent;
+    border: 0.2em solid #191919;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: calc(0.4vw + 1.2vh);  
+    margin: 1em;
+}
+
+.workProjectsBtns button:hover {
+    border: 0.2em solid rgb(253, 173, 0);
+    border-radius: 2em;
+}
+
+/*.workProjectsImages {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}*/
+
+.workProjectsImages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #202020;
+    overflow-y: auto; 
+    width: 100%;
+    height: 100vh;
+    place-self: center;
+    border-radius: 1em;
+    column-gap: 2em;
+}
+
+.workProjectsImages div{
+    width: 31%;
+    margin-top: 2em;
+    color: white;
+    font-family: 'poppins';
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.workProjectsImages div:hover{
+    opacity: 80%;
+    animation: portofolioAnimation 1000ms;
+}
+
+@keyframes portofolioAnimation {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-0.5em);
+    }
+}
+
+.workProjectsImages img{
+    width: 100%;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+    border: 0.2em solid transparent;
+}
+
+.workProjectsImages img:hover{
+    border: 0.2em solid rgb(253, 173, 0);
+}
+
+.workProjectsImages::-webkit-scrollbar {
+    width: 8px;
+}
+
+.workProjectsImages::-webkit-scrollbar-track {
+    margin: 3em;
+    background: #232323; 
+    border-radius: 10px;
+}
+
+.workProjectsImages::-webkit-scrollbar-thumb {
+    background: rgb(253, 173, 0);
+    border-radius: 4px;
+}
+  
+.workProjectsImages::-webkit-scrollbar-thumb:hover {  
+    cursor: pointer;
+    background:  rgb(189, 130, 2);
+}
+
+/* projectShow */
+
+.projectShowContainer{
+    display: none;
+    position: fixed;
+    backdrop-filter: blur(5px);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.projectShow{
+    background-color: #191919;
+    padding: 2em 1em;
+    width: 70%;
+}
+
+.projectShow .closeBtn{
+    position: absolute;
+    color: white;
+    top: 2em;
+    right: 2em;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Scrollable for projects */
+
+.scrollable-content h3{
+    color: white;
+    font-family: 'poppins';
+    font-size: calc(1vw + 2.5vh);
+    font-weight: 400;
+    margin: 1em 0em;
+    text-align: center;
+}
+
+.scrollable-content {
+    max-height: 100vh; 
+    overflow-y: auto; 
+    padding: 10px;
+}
+
+.scrollable-content img {
+    width: 90%;
+    place-self: center;
+    border-radius: 1em;
+    margin-bottom: 15px;
+  }
+
+.scrollable-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scrollable-content::-webkit-scrollbar-track {
+    margin: 3em 0;
+    background: #232323; 
+    border-radius: 10px;
+}
+
+.scrollable-content::-webkit-scrollbar-thumb {
+    background: rgb(253, 173, 0);
+    border-radius: 4px;
+}
+  
+.scrollable-content::-webkit-scrollbar-thumb:hover {  
+    cursor: pointer;
+    background:  rgb(189, 130, 2);
+}
+
+/* Contact section */
+
+.contactSection {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+    color: white;
+    font-family: 'poppins';
+    padding: 10em;
+    margin-top: 10em;
+    border-top: 0.2em solid rgba(255, 255, 255, 0.144);
+    border-bottom: 0.2em solid rgba(255, 255, 255, 0.144);
+}
+
+.contactText div{
+    display: flex;
+    gap: 3vw;
+    margin-bottom: 2em;
+    align-items: center;
+}
+
+.contactText div input {
+    background-color: rgba(0, 0, 0, 0.136);
+    border: 0.2em solid rgba(255, 204, 0, 0.974) ;
+    border-radius: 0.5em;
+    color: white;
+}
+
+.contactText div label {
+    font-size: calc(0.8vw + 1vh);
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.emailContainer input {
+    height: 4vh;
+    min-width: 15vw;
+    font-size: calc(0.3vw + 1vh);
+    font-family: 'poppins';
+}
+
+.messageContainer textarea {
+    min-width: 15vw;
+    max-width: 15vw;
+    min-height: 20vh;
+    max-height: 50vh;
+    background-color: rgba(0, 0, 0, 0.136);
+    border: 0.2em solid rgba(255, 204, 0, 0.974) ;
+    border-radius: 0.5em;
+    color: white;
+    font-size: calc(0.5vw + 1vh);
+    font-family: 'poppins';
+}
+
+.contactText button {
+    font-size: calc(0.5vw + 1vh);
+    padding: 1.5em;
+    margin-top: 2em;
+    background-color: #383838;
+    color: white;
+    border: 0.2em solid #383838;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+.contactText button:hover {
+    border: 0.2em solid rgb(253, 173, 0);
+    animation: submitAnimation 1000ms;
+}
+
+@keyframes submitAnimation {
+    from {
+        transform: translateY(0em);
+    }
+    to{
+        transform: translateY(-0.5em);
+    }
+}
+
+.contatcAnimation {
+    font-size: calc(3vw + 1vh);
+    font-weight: 400;
+    background: linear-gradient(80deg, rgb(245, 245, 245), rgb(255, 255, 255), rgb(202, 202, 202)) ;
+    background-size: 200%; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    animation: color 2s infinite;
+    text-align: center;
+    margin-top: 10vh;
+  }
+  
+  @keyframes color {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: -200%; 
+    }
+}
+
+.rights p {
+    color: rgba(255, 255, 255, 0.648);
+    font-family: 'poppins';
+    font-size: calc(0.3vw + 1vh);
+    margin-top: 1%;
+}
+
+
+@media screen and (max-width : 1420px) {
+
+    .heroHeaderCircle {
+        top: 75vh;
+    }
+
+    .homeSectionText h2 {
+        font-size: calc(1.8vw + 1vh);
+    }
+
+    .designer{
+        margin-left: -8vw;
+        margin-top: 4em;
+        display: block;
+        width: 65vw;
+        height: 65vh;     
+    }
+}
+
+@media screen and (max-width : 1250px) {
+    .designer{
+        margin-left: -5vw;
+        width: 60vw;
+        height: 60vh;     
+    }
+}
+
+@media screen and (max-width : 1120px) {
+
+    .heroHeaderCircle {
+        top: 83vh;
+    }
+
+    .heroPic {
+        margin-top: -1em;
+        margin-left: 3.5em;
+        width: 65%;
+    }
+
+    .homeSectionText h1 {
+        font-size: calc(4vw + 0.8vh);
+    }
+
+    .homeSectionText h2 {
+        font-size: calc(2vw + 1vh);
+    }
+
+    .homeSectionText p {
+        position: absolute;
+        width: 74%;
+        padding: 3em 0 2em 0;
+    }
+
+    .homeSectionText button {
+        position: absolute;
+        margin-top: 18.5em;
+        font-size: 0.9rem;
+    }
+
+    .homeSectionText button div {
+      max-width: 25vw;
+    }
+
+    .homeSection {
+        margin-bottom: 12em;
+    }
+
+    .aboutSection{
+      margin-left: 6vw ;
+    }
+
+    .designer{
+        margin-right: 2vw;
+        margin-top: -7em;
+        display: block;
+        width: 50vw;
+        height: 50vh;     
+    }
+
+    .contactText div {
+        display: block;
+    }
+
+    .emailContainer input {
+        min-width: 30vw;
+    }
+
+    .messageContainer textarea {
+        margin-top: 1em;
+        min-width: 30vw;
+    }
+}
+
+@media screen and (max-width : 1090px) {
+    .homeSectionText h1 {
+        font-size: calc(4vw + 0.5vh);
+    }
+    .homeSectionText h2 {
+        font-size: calc(1.8vw + 1vh);
+    }
+
+}
+
+@media screen and (max-width : 950px) {
+    .homeSectionText h1 {
+        font-size: calc(2.8vw + 1vh);
+    }
+
+    .homeSectionText h2 {
+        font-size: calc(1.5vw + 1vh);
+    }
+
+    .homeSectionText p {
+        width: 70%;
+    }
+
+    .heroPic {
+      margin-left: 5em;
+      width: 50%;
+    }
+
+    .homeSectionText button {
+        font-size: 0.8rem;
+    }
+
+    .aboutSectionImage{
+        display: none;
+    }
+
+    .aboutSectionText {
+        width: 100%;
+    }
+
+    .aboutSectionText p {
+        text-align: center;
+    }
+
+    .contactSection {
+        padding: 4em;
+    }
+
+    .contatcAnimation {
+        margin-top: 0vh;
+        margin-bottom: 6vh;
+    }
+
+    .contactText {
+        justify-content: center;
+    }
+
+    .contactSection {
+        display: block;
+    }
+
+    .emailContainer input {
+        min-width: 100%;
+        margin-top: 1em;
+    }
+
+    .messageContainer textarea{
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width : 870px){
+    .navSkill{
+        display: none;
+    }
+
+    .topNavContainer{
+        gap: 3em;
+    }
+
+    .topNavContainer a {
+        font-size: 0.8rem;
+    }
+
+    .heroPic {
+        width: 50%;
+        margin-left: 10vw;
+    }
+
+    .homeSectionText button {
+        font-size: 0.7rem;
+    }
+
+    .analysis {
+        gap: 0em;
+    }
+    .analysis h1{
+        font-size: calc(3vw + 1vh);
+    }
+
+    .analysis p{
+        font-size: calc(1vw + 1vh);
+    }
+
+    .designer{
+        margin-left:3em;
+        margin-top: -2em;
+        display: block;
+        width: 40vw;
+        height: 40vh;  
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .topNavContainer {
+        gap: 2em;
+    }
+
+    .homeSection{
+        display: block;
+        padding: 2em 1em 3em 1em;
+        margin: 0em;
+    }
+
+    .homeSectionText {
+        margin-left: 0em;
+        width: 100%;
+        margin-top: 28vh;
+        text-align: center;
+        padding: 7vw ;
+    }
+
+    .homeSectionText h1{
+      font-size: calc(1vw + 3vh);
+    }
+
+    .homeSectionText p {
+        width: 100%;
+        margin: 0em;
+        text-align: center;
+        position: relative;
+    }
+
+    .homeSectionText button {
+        right: 0.3vw;
+        margin-top: 2em;
+        font-size: 1rem;
+        position: relative;
+    }
+
+    .homeSectionText button div{
+      max-width: 40vw;
+    }
+
+    .homeSectionImage {
+        position: absolute;
+        top: 11vh;
+        left: 32.5vw;
+        margin-left: -5vw;
+    }
+
+    .heroPic{
+        width: 80%;
+    }
+
+    .aboutSection{
+      padding: 0em 2em;
+      margin: -10em 0 2em 0;
+    }
+
+    .aboutSectionText {
+        margin-left: 0.8em;
+        width: 100%;
+    }
+
+    .aboutSectionText p {
+        text-align: center;
+    }
+
+    .analysis {
+        gap: 5em;
+    }
+}
+
+@media screen and (max-width : 725px){
+
+    .topNavContainer {
+        width: 95%;
+    }
+    
+    .analysis {
+        gap: 1em;
+    }
+
+    .aboutSection {
+        margin-bottom: 5em;
+    }
+}
+
+/* mobile version */
+
+@media screen and (max-width: 600px) {
+
+    .topNavContainer a {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width : 550px) {
+
+    .logo{
+        width: 12vw;
+    }
+
+    .topNavContainer nav ul{
+        display: none;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .topNavContainer {
+        gap: 52vw;
+    }
+
+    .topNavContainer nav .menu {
+        display: block;
+        width: 5vw;
+        cursor: pointer;
+    }
+
+    .menuBox{
+        display: none;
+        position: fixed;
+        background-color: #191919;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        top: 0vh;
+        right: 0vw;
+        padding: 8vw;
+    }
+
+    .menuBoxHeader{
+        display: flex;
+        justify-content: center;
+        width: 95%;
+        gap: 51vw;
+        margin-top: 0.3em;
+        margin-left: 0.2em;
+    }
+
+    .menuBoxText{
+        text-align: center;
+        margin-top: 10em;
+    }
+
+    .menuBoxText a {
+        text-decoration: none;
+    }
+
+    .menuBoxText a h1{
+        color: white;
+        font-family: "poppins";
+        margin-bottom: 1.5em;
+    }
+
+    .menuBoxDefault{
+        color: rgb(253, 143, 0);
+    }
+
+    .close{
+        width: 4.5vw;
+        height: 2.4vh;
+        cursor: pointer;
+    }
+
+    .homeSectionImage {
+        top: 9vh;
+    }
+
+    .heroPic{
+        width: 110%;
+    }
+}
+
+/* mobile version for resume */
+
+@media screen and (max-width : 500px) {
+
+    .homeSectionText h1 {
+        margin-left: 0.5em;
+    }
+
+    .homeSectionText h2 {
+        margin-left: 1em;
+    }
+
+    .homeSectionText button {
+        right: -0.5vw;
+    }
+}
+
+/* Samsung mobile version */
+
+@media screen and (max-width : 450px) {
+
+    .topNavContainer {
+        width: 100%;
+    }
+
+    .heroPic {
+        margin-top: -2vh;
+        margin-left: -1.5vw;
+        width: 120%;
+    }
+    .homeSectionText {
+        margin-top: 8em;
+    }
+
+    .homeSectionText h1 {
+        margin-left: 0em;
+        font-size: 1.8rem;
+    }
+
+    .homeSectionText h2 {
+        margin-left: 0em;
+        font-size: 1rem;
+    }
+
+    .homeSectionText p {
+        margin-top: 1em;
+        font-size: 0.8rem;
+    }
+
+    .homeSectionText button {
+        right : -1SSSvw;
+        font-size: 1rem;
+        margin-top: 1em;
+    }
+
+    .aboutSection {
+        margin-left: 3.8em;
+    }
+
+    .aboutSectionText h1 {
+        font-size: 1.8rem;
+    }
+
+    .aboutSectionText p {
+        font-size: 1rem;
+        padding: 0 1.4em;
+    }
+
+    .analysis {
+        margin-left: -0.5em;
+        gap: 0.5em;
+    }
+
+    .skillsImages {
+        padding: 0 1em;
+    }
+
+    .skillsImages div {
+        padding: 2em 1em 0.5em 1em;
+        margin: 1em 1em 2em 1em;
+        width: 20%;
+    }
+
+    .workProjectsText {
+        margin-left: 1em;
+    }
+
+    .workProjectsImages {
+        column-gap: 10em;
+    }
+
+    .workProjectsImages div {
+        width: 100%;
+    }
+    .projectShow div h3 {
+        font-size: 1.5rem;
+        padding-right: 2em;
+    }
+}
