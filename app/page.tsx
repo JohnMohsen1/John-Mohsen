@@ -8,10 +8,13 @@ import SkillSection from "./mainComponents/skillSection"
 import WorkSection from "./mainComponents/Works/imgsSection"
 import ContactSection from "./mainComponents/contactSection"
 
+import DomJs from "./scripts/mainScript";
+
 
 export default function Home() {
   return (
   <>
+    <DomJs/>
     <div className="main">
       <NavBar />
       <HeroSection />
