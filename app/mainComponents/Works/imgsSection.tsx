@@ -1,4 +1,7 @@
+'use client'
+
 import Imgs from "./workImgs";
+
 
 function WorkSection () {
     return (

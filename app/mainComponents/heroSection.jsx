@@ -1,10 +1,11 @@
-"use client"
+/* "use client"
 
 import lottie from 'lottie-web';
 import { defineElement } from 'lord-icon-element';
 
 // define "lord-icon" custom element with default properties
-defineElement(lottie.loadAnimation);
+defineElement(lottie.loadAnimation); */
+
 
 const HeroSection = () => {
 
@@ -36,7 +37,7 @@ const HeroSection = () => {
           <img src="./hero_imgs/herpPic.png" alt="" className="heroPic" />
         </div>
 
-        <div className="heroHeaderCircleContainer">
+        {/*<div className="heroHeaderCircleContainer">
           <span className="heroHeaderCircle" id="menucircle">
             <img src="./hero_imgs/menuWhite.png" alt="" />
           </span>
@@ -65,7 +66,7 @@ const HeroSection = () => {
           <a href="#Skills">
             <span className="heroHeaderCircle" id="workcircle" title="Skills">
               <lord-icon
-                src="https://cdn.lordicon.com/tdbbbqzo.json"
+                src="/hero_imgs/wired-flat-2844-magic-wand-hover-pinch.json"
                 trigger="hover"
                 colors="primary:#ffffff,secondary:#ffffff,tertiary:#ffffff"
               ></lord-icon>
@@ -86,7 +87,7 @@ const HeroSection = () => {
           <span className="heroHeaderCircle" id="closecircle">
             <img src="./hero_imgs/close.png" alt="" />
           </span>
-        </div>
+        </div>*/}
       </section>
     </div>
   );

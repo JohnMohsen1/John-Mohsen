@@ -1,3 +1,5 @@
+'use client'
+
 import React from "react";
 import NavBar from "./mainComponents/topNav"
 import HeroSection from "./mainComponents/heroSection.jsx"
@@ -5,6 +7,8 @@ import AboutSection from "./mainComponents/aboutSection"
 import SkillSection from "./mainComponents/skillSection"
 import WorkSection from "./mainComponents/Works/imgsSection"
 import ContactSection from "./mainComponents/contactSection"
+
+import DomJs from "./scripts/mainScript";
 
 
 export default function Home() {
@@ -21,6 +25,7 @@ export default function Home() {
       <div className="rights">
         <p>John Designs © 2025. All rights reserved</p>
       </div>
+      <DomJs/>
     </div>
   </>  
   );
