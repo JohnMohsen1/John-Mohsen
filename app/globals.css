@@ -1037,7 +1037,7 @@ header a:hover{
     .homeSectionText {
         margin-left: 0em;
         width: 100%;
-        margin-top: 28vh;
+        margin-top: 25vh;
         text-align: center;
         padding: 7vw ;
     }
@@ -1054,8 +1054,8 @@ header a:hover{
     }
 
     .homeSectionText button {
-        right: 0.3vw;
         margin-top: 2em;
+        padding: 1em 2.5em;
         font-size: 1rem;
         position: relative;
     }
@@ -1066,8 +1066,8 @@ header a:hover{
 
     .homeSectionImage {
         position: absolute;
-        top: 11vh;
-        left: 30vw;
+        top: 6vh;
+        left: 28vw;
     }
 
     .heroPic{
@@ -1088,7 +1088,7 @@ header a:hover{
     }
 
     .analysis {
-        gap: 5em;
+        gap: 3em;
     }
 }
 
@@ -1195,6 +1195,7 @@ header a:hover{
         place-self: center;
         
     }
+
 
     .workProjectsBtns button {
         font-size: 0.6rem;  
