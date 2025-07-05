@@ -1040,16 +1040,15 @@ header a:hover{
     }
 
     .heroPic {
-        width: 60%;
+        width: 50%;
+        margin-left: 5em;
+        margin-top: -3em;
     }
 
     .homeSectionText button {
         font-size: 0.7rem;
     }
 
-    .analysis {
-        gap: 0em;
-    }
     .analysis h1{
         font-size: calc(3vw + 1vh);
     }
@@ -1356,6 +1355,7 @@ header a:hover{
 }
 
 /* Samsung mobile version */
+
 @media screen and (max-width: 430px) {
     .heroPic {
         width: 100%;
