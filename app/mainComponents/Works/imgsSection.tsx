@@ -9,7 +9,7 @@ function WorkSection () {
         <section className="workProjects" id="Projects">
             <div className="workProjectsText">
                 <h1>Designs</h1>
-                <p>A small gallery of 100 designs created for various companies & organizations.</p>
+                 <p>A<span style={{color: "rgb(253, 173, 0)", fontWeight: "600"}}> small gallery of 100 designs </span>created for various companies & organizations.</p>
             </div>
             <div className="mainWorksCintainer">
                 <div className="workProjectsBtns">
