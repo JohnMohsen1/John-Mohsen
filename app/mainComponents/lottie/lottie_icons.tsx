@@ -3,7 +3,7 @@
 import { useRef } from 'react';
 import { Player } from '@lordicon/react';
 
-export default function HoverIcon({ icon, size }: { icon: any; size: number }) {
+export default function HoverIcon({ icon, size }: { icon: unknown; size: number }) {
   const ref = useRef<Player>(null);
 
   const handleMouseEnter = () => ref.current?.playFromBeginning();
@@ -17,7 +17,7 @@ export default function HoverIcon({ icon, size }: { icon: any; size: number }) {
     >
 
     <Player ref={ref} 
-            icon={icon}
+            icon={icon as object}
             size={size}
     />
     </div>
