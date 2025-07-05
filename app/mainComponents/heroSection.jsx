@@ -18,9 +18,8 @@ const HeroSection = () => {
           </p>
           <button className="resume btn"> 
             <div>
-              <img src="./hero_imgs/youtube.svg" alt=""/>
               <a href='https://youtube.com/@johnmohsen1?si=nBXej-LhUAt1ieiD' target='_blank'>
-              Visit my YouTube channel
+                <img src="./hero_imgs/Youtube_btn.svg" alt=""/>
               </a>
             </div>
           </button>
