@@ -120,7 +120,7 @@ header a:hover{
 
 .homeSection{
     display: flex;
-    padding: 0em 8em;
+    padding: 0em 6.6vw;
     justify-content: center;
 }
 
@@ -181,7 +181,8 @@ header a:hover{
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 18vw;
+  gap: 2em;
+  max-width: 20vw;
 }
 
 .homeSectionText button a {
@@ -189,7 +190,7 @@ header a:hover{
 }
 
 .homeSectionText button img {
-  width: 10%;
+  width: 100%;
   color: white;
   margin-right: 0.5em;
 }
@@ -404,7 +405,7 @@ header a:hover{
 
 .aboutSectionText p{
     font-size: calc(1vw + 0.3vh);
-    padding: 0 3em;
+    padding: 0 0 0 3em;
     line-height: 2.3em;
     text-align: justify;
 }
@@ -413,7 +414,7 @@ header a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5em;
+    gap: 7vw;
     padding: 3em 0;
 }
 
@@ -817,6 +818,10 @@ header a:hover{
         top: 75vh;
     }
 
+    .homeSection {
+        padding-left: 5.5vw;
+    }
+
     .homeSectionText h2 {
         font-size: calc(1.8vw + 1vh);
     }
@@ -838,6 +843,23 @@ header a:hover{
     }
 }
 
+@media screen and (max-width : 1190px) {
+
+    .homeSectionText h1{
+        font-size: calc(0.9vw + 4vh);
+    }
+
+    .designer{
+        margin-left: 0vw;
+        width: 50vw;
+        height: 50vh;    
+    }
+
+    .aboutSectionText .analysis {
+        gap: 5vw
+    }
+}
+
 @media screen and (max-width : 1120px) {
 
     .heroHeaderCircle {
@@ -845,8 +867,8 @@ header a:hover{
     }
 
     .heroPic {
-        margin-top: -1em;
-        margin-left: 3.5em;
+        margin-top: -5vh;
+        margin-left: 5vw;
         width: 65%;
     }
 
@@ -860,7 +882,7 @@ header a:hover{
 
     .homeSectionText p {
         position: absolute;
-        width: 74%;
+        width: 80%;
         padding: 3em 0 2em 0;
     }
 
@@ -882,12 +904,16 @@ header a:hover{
       margin-left: 6vw ;
     }
 
+    .aboutSectionText .analysis{
+        gap: 8vw;
+    }
+
     .designer{
-        margin-right: 2vw;
-        margin-top: -7em;
-        display: block;
-        width: 50vw;
-        height: 50vh;     
+        margin-left: -2em;
+    }
+
+    .aboutSectionText .analysis {
+        gap: 1em;
     }
 
     .contactText div {
@@ -911,6 +937,16 @@ header a:hover{
     .homeSectionText h2 {
         font-size: calc(1.8vw + 1vh);
     }
+
+    .aboutSectionText .analysis{
+        gap: 5vw;
+    }
+
+    .designer {
+        width: 40vw;
+        height: 40vh;
+    }
+
     .workProjectsImages div{
         width: 45%;
     }
@@ -926,16 +962,20 @@ header a:hover{
     }
 
     .homeSectionText p {
-        width: 70%;
+        width: 80%;
     }
 
     .heroPic {
-      margin-left: 5em;
-      width: 50%;
+      margin-left: 5vw;
+      width: 60%;
     }
 
     .homeSectionText button {
         font-size: 0.8rem;
+    }
+
+    .aboutSection {
+        margin-left: 0em;
     }
 
     .aboutSectionImage{
@@ -948,6 +988,11 @@ header a:hover{
 
     .aboutSectionText p {
         text-align: center;
+        padding: 0em;
+    }
+
+    .aboutSectionText .analysis {
+        gap: 10vw;
     }
 
     .projectShow{
@@ -995,8 +1040,7 @@ header a:hover{
     }
 
     .heroPic {
-        width: 50%;
-        margin-left: 10vw;
+        width: 60%;
     }
 
     .homeSectionText button {
@@ -1072,6 +1116,8 @@ header a:hover{
 
     .heroPic{
         width: 80%;
+        margin-top: -2.5vh;
+        margin-left: 8.5vw;
     }
 
     .aboutSection{
@@ -1085,6 +1131,7 @@ header a:hover{
 
     .aboutSectionText p {
         text-align: center;
+        padding: 0 5vw;
     }
 
     .analysis {
@@ -1113,6 +1160,14 @@ header a:hover{
 
     .topNavContainer a {
         font-size: 0.7rem;
+    }
+
+    .homeSectionText {
+        margin-top: 22vh;
+    }
+
+    .aboutSectionText .analysis {
+        gap: 5vw;
     }
 }
 
@@ -1193,7 +1248,7 @@ header a:hover{
     .heroPic{
         width: 100%;
         place-self: center;
-        
+        margin-left: 15vw; 
     }
 
 
@@ -1223,7 +1278,7 @@ header a:hover{
     }
 }
 
-/* Samsung mobile version */
+/* Samsung mobile version "from 450 and smaller !"*/
 
 @media screen and (max-width : 450px) {
 
@@ -1261,7 +1316,7 @@ header a:hover{
 
     .aboutSectionText p {
         font-size: 1rem;
-        padding: 0 1.4em;
+        padding: 0 0 0 1.4em;
     }
 
     .analysis {
@@ -1297,5 +1352,29 @@ header a:hover{
 
     .workProjectsBtns button {
         font-size: 0.5rem;  
+    }
+}
+
+/* Samsung mobile version */
+@media screen and (max-width: 430px) {
+    .heroPic {
+        width: 100%;
+        margin: 0em;
+    }
+
+    .homeSectionImage{
+        place-self: center;
+        top: 2vh;
+        left: 33vw;
+    }
+
+    .homeSectionText {
+        margin-top: 20vh;
+        padding-right: 0.3em;
+        padding-left: 0.3em;
+    }
+
+    .aboutSectionText p {
+        padding: 0em;
     }
 }
