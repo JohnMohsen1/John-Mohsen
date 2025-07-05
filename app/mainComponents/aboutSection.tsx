@@ -39,36 +39,35 @@ function AboutSection () {
 
     return (
         <section className="aboutSection" id="About">
-           <div className="aboutSectionImage">
-            <canvas className="designer" 
-                    ref={canvasRef}
-                    />
-          </div>
-          <div className="aboutSectionText">
-            <h1 className="aboutTitle">About Me</h1>
-            <p>
-              I’m John Mohsen, a graphic designer with over 5 years of experience crafting visually striking and purposeful 
-              designs that communicate effectively. I’m passionate about bringing real value to clients by understanding 
-              their vision and transforming ideas into impactful visual content. My goal is to build long-term creative partnerships,
-              and I’ve had the privilege of working with a diverse range of clients—from solo entrepreneurs to large companies.
-            </p>
-            <div className="analysis">
-              <div className="projects">
-                <h1>+500</h1>
-                <p>Design</p>
-              </div>
-              <div className="clients">
-                <h1>+30</h1>
-                <p>Client</p>
-              </div>
-              <div className="experience">
-                <h1>+5 years</h1>
-                <p>Experience</p>
+            <div className="aboutSectionImage">
+              <canvas className="designer" 
+                      ref={canvasRef}
+                      />
+            </div>
+            <div className="aboutSectionText">
+              <h1 className="aboutTitle">About Me</h1>
+              <p>
+                I’m John Mohsen, a graphic designer with 5+ years of experience creating visually striking, 
+                purposeful designs that communicate effectively. Passionate about delivering real value by understanding each client’s vision 
+                and turning ideas into impactful visual content. Committed to building long-term creative partnerships, 
+                with experience spanning solo entrepreneurs to large-scale companies.
+              </p>
+              <div className="analysis">
+                <div className="projects">
+                  <h1>+500</h1>
+                  <p>Design</p>
+                </div>
+                <div className="clients">
+                  <h1>+30</h1>
+                  <p>Client</p>
+                </div>
+                <div className="experience">
+                  <h1>+5 years</h1>
+                  <p>Experience</p>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-
+          </section>
     )
 }
 
