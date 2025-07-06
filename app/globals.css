@@ -418,6 +418,11 @@ header a:hover{
     padding: 3em 0;
 }
 
+.analysis div p {
+    text-align: center;
+    padding: 0em;
+}
+
 .analysis h1{
     font-size: calc(1vw + 3vh);
     font-weight: 800;
