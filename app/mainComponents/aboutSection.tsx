@@ -39,36 +39,35 @@ function AboutSection () {
 
     return (
         <section className="aboutSection" id="About">
-  <div className="aboutSectionImage">
-    <canvas className="designer" 
-            ref={canvasRef}
-            />
-  </div>
-  <div className="aboutSectionText">
-    <h1 className="aboutTitle">About Me</h1>
-    <p>
-      I’m John Mohsen, a graphic designer with 5+ years of experience creating visually striking, 
-      purposeful designs that communicate effectively. Passionate about delivering real value by understanding each client’s vision 
-      and turning ideas into impactful visual content. Committed to building long-term creative partnerships, 
-      with experience spanning solo entrepreneurs to large-scale companies.
-    </p>
-    <div className="analysis">
-      <div className="projects">
-        <h1>+500</h1>
-        <p>Design</p>
-      </div>
-      <div className="clients">
-        <h1>+30</h1>
-        <p>Client</p>
-      </div>
-      <div className="experience">
-        <h1>+5 years</h1>
-        <p>Experience</p>
-      </div>
-    </div>
-  </div>
-</section>
-
+            <div className="aboutSectionImage">
+              <canvas className="designer" 
+                      ref={canvasRef}
+                      />
+            </div>
+            <div className="aboutSectionText">
+              <h1 className="aboutTitle">About Me</h1>
+              <p>
+                I’m John Mohsen, a graphic designer with 6+ years of experience creating visually striking, 
+                purposeful designs that communicate effectively. Passionate about delivering real value by understanding each client’s vision 
+                and turning ideas into impactful visual content. Committed to building long-term creative partnerships, 
+                with experience spanning solo entrepreneurs to large-scale companies.
+              </p>
+              <div className="analysis">
+                <div className="projects">
+                  <h1>+1K</h1>
+                  <p>Design</p>
+                </div>
+                <div className="clients">
+                  <h1>+30</h1>
+                  <p>Client</p>
+                </div>
+                <div className="experience">
+                  <h1>+6 years</h1>
+                  <p>Experience</p>
+                </div>
+              </div>
+            </div>
+          </section>
     )
 }
 

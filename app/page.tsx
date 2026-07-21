@@ -1,4 +1,4 @@
-'use client';
+"use client"
 
 import React from "react";
 import NavBar from "./mainComponents/topNav"
@@ -26,6 +26,7 @@ export default function Home() {
       <div className="rights">
         <p>John Designs © 2025. All rights reserved</p>
       </div>
+      <DomJs/>
     </div>
   </>  
   );
