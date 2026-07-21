@@ -394,6 +394,125 @@ export default function DomJs() {
      
       project97: { title: "Social Media Design for El King",
                    image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1751479675/2nd-term_rar6he.jpg" },
+     
+      project98: { title: "Design For Falq El-Massrat",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784599008/1-%D8%A7%D9%84%D8%A7%D8%A8_p723bb.png" },
+     
+      project99: { title: "Design For Falq El-Massrat",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784598716/National-Team-WC_hphofi.png" },
+     
+      project100: { title: "Design For Falq El-Massrat",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784598668/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A8%D8%A7%D9%86%D8%AA%D8%B8%D8%A7%D8%B1%D9%83_gxtscz.png" },
+     
+      project101: { title: "Design For Falq El-Massrat",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784598696/-2%D8%A7%D8%AD%D8%B2%D9%85-%D8%AD%D9%82%D9%8A%D8%A8%D8%AA%D9%83_ckpn8f.png" },
+     
+      project102: { title: "Design For Falq El-Massrat",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784598418/%D9%8A%D9%86%D8%A8%D8%B9_hwydbe.jpg" },
+     
+      project103: { title: "Design For Falq El-Massrat",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784598743/%D9%88%D8%AC%D9%87%D8%A7%D8%AA-%D8%B9%D8%A7%D9%84%D9%85%D9%8A%D8%A9_avikhu.png" },
+     
+      project104: { title: "Design For Falq El-Massrat",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784598806/%D8%A8%D8%A7%D9%84%D9%8A-%D8%A7%D9%86%D8%B3%D8%AA%D8%A7_os2f4j.png" },
+     
+      project105: { title: "Design For Falq El-Massrat",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784598433/%D9%85%D8%A7%D9%84%D8%AF%D9%8A%D9%81-1_lqgcfi.jpg" },
+     
+      project106: { title: "Design For Falq El-Massrat",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784598386/%D8%A7%D9%88%D8%B1%D9%88%D8%A8%D8%A7_rocuqz.jpg" },
+     
+      project107: { title: "Design For El-moferh Polyclinic",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784602357/%D9%86%D9%88%D8%A8%D8%A9-%D9%82%D9%84%D8%A8%D9%8A%D8%A9-_rt7upf.jpg" },
+     
+      project108: { title: "Design For El-moferh Polyclinic",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784602640/%D8%A7%D9%84%D9%85%D9%81%D8%B1%D8%AD1-1_z6olns.jpg" },
+     
+      project109: { title: "Design For El-moferh Polyclinic",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784602260/%D9%86%D8%B5%D8%A7%D8%A6%D8%AD-%D8%A7%D8%B3%D9%86%D8%A7%D9%86_om8trc.jpg" },
+     
+      project110: { title: "Design For El-moferh Polyclinic",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784602992/%D8%A7%D9%84%D9%85%D9%81%D8%B1%D8%AD_-_%D8%AE%D8%B5%D9%88%D9%85%D8%A7%D8%AA_1_iwh0ri.jpg" },
+     
+      project111: { title: "Design For El-moferh Polyclinic",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784602297/dentist_opening-1_qkegth.jpg" },
+     
+      project112: { title: "Design For El-moferh Polyclinic",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784602631/%D8%A7%D9%84%D9%85%D9%81%D8%B1%D8%AD-6_2_eiihux.jpg" },
+     
+      project113: { title: "Design For El-moferh Polyclinic",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784602561/%D8%A7%D9%84%D9%85%D9%81%D8%B1%D8%AD-6_fuiahz.jpg" },
+     
+      project114: { title: "Design For El-moferh Polyclinic",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784602184/%D8%A7%D9%84%D9%85%D9%81%D8%B1%D8%AD-2_3_hb6xte.jpg" },
+     
+      project115: { title: "Design For El-moferh Polyclinic",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784602131/leukemia_plkvwa.jpg" },
+     
+      project116: { title: "Design For Arabian Child",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784621873/ramadan_seweky.png" },
+     
+      project117: { title: "Design For Arabian Child",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784619360/UAE_d1agxz.jpg" },
+     
+      project118: { title: "Design For Arabian Child",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784619361/fouding-day_pyzx9y.jpg" },
+     
+      project119: { title: "Design For Arabian Child",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784619307/quality-in-early-_sz2qee.png" },
+     
+      project120: { title: "Design For Arabian Child",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784621864/9-centersl_rxdisj.png" },
+     
+      project121: { title: "Design For Arabian Child",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784621821/Arabian-Child-Curriculum_opsi09.png" },
+     
+      project122: { title: "Design For Arabian Child",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784619358/children_s-rights_dwjjks.png" },
+     
+      project123: { title: "Design For Arabian Child",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784621858/violet-kindergarten-english_l3lu24.jpg" },
+     
+      project124: { title: "Design For Arabian Child",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784619401/CACHE-Level-5_bbpfrh.png" },
+     
+      project125: { title: "Design For Arabian Child",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784619502/Abu-Dhabi-event_jeol8o.png" },
+     
+      project126: { title: "Design For Arabian Child",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784621625/inspection_hh9y05.png" },
+     
+      project127: { title: "Design For Arabian Child",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784619281/launching-new-nursery_gtootv.png" },
+
+      project128: { title: "Design For Tadom",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784645340/%D8%AA%D8%AF%D9%88%D9%85-1_3_b6rkpq.jpg" },
+
+      project129: { title: "Design For Tadom",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784645640/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D8%AA%D8%AA%D8%B7%D9%88%D8%B9-%D8%AA%D8%AF%D9%88%D9%85_f3yp1d.jpg" },
+
+      project130: { title: "Design For Tadom",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784645907/%D8%AA%D8%AF%D9%88%D9%851-12_c8w1pd.jpg" },
+
+      project131: { title: "Design For Tadom",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784646276/%D8%B9%D9%8A%D8%AF-%D8%A7%D9%84%D9%81%D8%B7%D8%B1_fg5v0c.png" },
+
+      project132: { title: "Design For Tadom",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784645869/Ramadan_bnemlg.jpg" },
+
+      project133: { title: "Design For Tadom",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784645692/%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%AC%D9%85%D8%B9%D8%A9_o65tdd.jpg" },
+
+      project134: { title: "Design For Tadom",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784645147/%D8%AA%D8%AF%D9%88%D9%85-1_dgyhor.jpg" },
+
+      project135: { title: "Design For Tadom",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784645283/%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%AA%D8%A3%D8%B3%D9%8A%D8%B3_trwbyk.jpg" },
+
+      project136: { title: "Design For Tadom",
+                   image: "https://res.cloudinary.com/dx0wptkxr/image/upload/v1784646032/6%D8%AA%D8%AF%D9%88%D9%85_h0wewy.jpg" },
+
+
     };
 
     document.querySelectorAll('.portfolio-design').forEach(design => {

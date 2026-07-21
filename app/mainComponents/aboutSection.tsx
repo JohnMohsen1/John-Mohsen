@@ -54,7 +54,7 @@ function AboutSection () {
               </p>
               <div className="analysis">
                 <div className="projects">
-                  <h1>+500</h1>
+                  <h1>+1k</h1>
                   <p>Design</p>
                 </div>
                 <div className="clients">
@@ -62,7 +62,7 @@ function AboutSection () {
                   <p>Client</p>
                 </div>
                 <div className="experience">
-                  <h1>+5 years</h1>
+                  <h1>+6 years</h1>
                   <p>Experience</p>
                 </div>
               </div>
