@@ -223,7 +223,7 @@ function Imgs () {
 
       <div className="portfolio-design companiesProject" data-project="project25">
         <img src="https://res.cloudinary.com/dx0wptkxr/image/upload/v1751478953/who2_nutnvr.jpg" alt="" />
-        <p>Social Media Design For Devista For Digital Solutions</p>
+        <p>Social Media Design For Devista For Digital solutions</p>
       </div>
 
       <div className="portfolio-design companiesProject" data-project="project26">
